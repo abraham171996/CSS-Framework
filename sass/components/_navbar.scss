@@ -1,0 +1,38 @@
+$navbar-height: 60px;
+$navbar-bg-color: #f8f9fa;
+$navbar-text-color: #333;
+$navbar-link-color: #007bff;
+
+@mixin navbar {
+  height: $navbar-height;
+  background-color: $navbar-bg-color;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &-brand {
+    font-weight: bold;
+    color: $navbar-text-color;
+    text-decoration: none;
+  }
+
+  &-nav {
+    list-style: none;
+    display: flex;
+
+    &-item {
+      margin-left: 1rem;
+
+      &-link {
+        color: $navbar-text-color;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+

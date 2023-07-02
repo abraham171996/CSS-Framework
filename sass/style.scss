@@ -1,0 +1,14 @@
+@import "layout/breakpoints";
+@import "layout/container";
+@import "layout/z-index";
+@import "content/typography";
+@import "content/images";
+@import "forms/forms";
+@import "components/alert";
+@import "components/button";
+@import "components/card";
+@import "components/color";
+@import "components/navbar";
+.img-fluid{
+    @include my-image;
+}

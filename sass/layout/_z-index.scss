@@ -1,0 +1,16 @@
+$z-indexes: (
+  "modal": 1050,
+  "dropdown": 1000,
+  "navbar": 1030,
+  "overlay": 1040,
+  "tooltip": 1060,
+  "popover": 1070,
+  "carousel": 1080,
+  "backdrop": 1090,
+);
+
+@each $name, $value in $z-indexes {
+  .z-index-#{$name} {
+    z-index: $value;
+  }
+}

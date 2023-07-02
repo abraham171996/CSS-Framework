@@ -1,0 +1,31 @@
+@mixin alert($bg-color, $text-color) {
+    padding: 1rem;
+    border-radius: 0.25rem;
+    background-color: $bg-color;
+    color: $text-color;
+    
+    &.alert-primary {
+      background-color: $bg-color;
+      color: $text-color;
+    }
+    
+    &.alert-success {
+      background-color: $bg-color;
+      color: $text-color;
+    }
+    
+    &.alert-warning {
+      background-color: $bg-color;
+      color: $text-color;
+    }
+    
+    &.alert-danger {
+      background-color: $bg-color;
+      color: $text-color;
+    }
+    
+    &.alert-info {
+      background-color: $bg-color;
+      color: $text-color;
+    }
+  }

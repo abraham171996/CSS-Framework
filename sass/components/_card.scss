@@ -1,0 +1,28 @@
+@mixin card {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+    &-title {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+  
+    &-text {
+      color: #555;
+    }
+  
+    &-link {
+      color: #007bff;
+      text-decoration: none;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  
+ 
+  

@@ -1,0 +1,23 @@
+@mixin button($bg-color, $text-color) {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: $bg-color;
+    color: $text-color;
+    cursor: pointer;
+  
+    &:hover {
+      background-color: darken($bg-color, 10%);
+    }
+  
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.2);
+    }
+  }
+  
